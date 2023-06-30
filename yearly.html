@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Database - Yearly Report</title>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Database - Yearly Report</h1>
+        <div class="buttons">
+          <button onclick="goToHome()">Home</button>
+          <div class="dropdown">
+            <button class="dropbtn">Reports</button>
+            <div class="dropdown-content">
+              <a href="half-yearly.html">Half Yearly</a>
+              <a href="quarterly.html">Quarterly</a>
+              <a href="yearly.html">Yearly</a>
+            </div>
+          </div>
+          <button onclick="goToInfo()">Info</button>
+        </div>
+      </header>
+  
+  <main>
+    <h2>Yearly Report</h2>
+    
+    <!-- Display the form or table for the Yearly report -->
+    <form id="displayForm">
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id">
+      
+      <label for="resource">Resource:</label>
+      <input type="text" id="resource" name="resource">
+      
+      <label for="region">Region:</label>
+      <input type="text" id="region" name="region">
+      
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
+      
+      <label for="amount">Amount Total:</label>
+      <input type="number" id="amount" name="amount">
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description"></textarea>
+      
+      <button type="submit" onclick="displayReport()">Display</button>
+    </form>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
